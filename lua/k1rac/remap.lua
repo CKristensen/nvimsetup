@@ -23,8 +23,7 @@ V.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 V.keymap.set("i", "<C-c>", "<Esc>")
 
 V.keymap.set("n", "Q", "<nop>")
-V.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-V.keymap.set("n", "<leader>f", V.lsp.buf.format)
+V.keymap.set("n", "<leader>F", V.lsp.buf.format)
 
 V.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 V.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")

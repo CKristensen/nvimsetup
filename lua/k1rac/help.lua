@@ -11,8 +11,7 @@ Shortcuts and Configurations Added in NVim:
     - <leader>y: Yank selected text
     - <leader>d: Delete selected text
     - <leader>Y: Yank to end of line
-    - <C-f>: Open new tmux window with tmux-sessionizer
-    - <leader>f: Format code using LSP
+    - <leader>F: Format code using LSP
 
   - Visual Mode Select Shortcuts:
     - J: Move selected lines down
