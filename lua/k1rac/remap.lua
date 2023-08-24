@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -32,7 +32,20 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-vim.keymap.set("n","<C-Down>","<C-W><C-J>")
-vim.keymap.set("n","<C-Up>","<C-W><C-K>")
-vim.keymap.set("n","<C-Right>","<C-W><C-L>")
-vim.keymap.set("n","<C-Left>","<C-W><C-H>")
+
+-- moving between splits
+vim.keymap.set("n", "<C-Down>", "<C-W><C-J>")
+vim.keymap.set("n", "<C-Up>", "<C-W><C-K>")
+vim.keymap.set("n", "<C-Right>", "<C-W><C-L>")
+vim.keymap.set("n", "<C-Left>", "<C-W><C-H>")
+
+-- moving between buffers
+vim.keymap.set("n", "<A-Right>", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<A-Left>", "<cmd>bprev<CR>")
+vim.keymap.set("n", "<A-Down>", "<cmd>bdelete<CR>")
+
+vim.keymap.set("i", "<A-Right>", "<cmd>bnext<CR>")
+vim.keymap.set("i", "<A-Left>", "<cmd>bprev<CR>")
+
+--- :tnoremap <Esc> <C-\><C-n>
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap = true})
