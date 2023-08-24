@@ -46,4 +46,6 @@ require('packer').startup(function(use)
 		}
 	}
 	use('petobens/poet-v')
+    use{'onsails/lspkind.nvim'}
 end)
+
