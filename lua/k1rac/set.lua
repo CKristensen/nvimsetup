@@ -1,6 +1,7 @@
 --- vim.opt.guicursor = ""
 
 vim.opt.nu = true
+vim.g.netrw_bufsettings = "noma nomod nu nowrap ro nobl"
 vim.opt.relativenumber = false
 
 vim.opt.tabstop = 4
@@ -29,3 +30,5 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
+--- set nu
+vim.opt.cursorline = true

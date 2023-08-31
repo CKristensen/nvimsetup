@@ -23,6 +23,7 @@ require('packer').startup(function(use)
 	use{'mbbill/undotree'}
 	use{'tpope/vim-fugitive'}
     use {'hrsh7th/nvim-cmp'}
+    use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
 	use {
 
 		'VonHeikemen/lsp-zero.nvim',
