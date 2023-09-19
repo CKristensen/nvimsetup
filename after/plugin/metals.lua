@@ -35,10 +35,7 @@ api.nvim_create_autocmd("FileType", {
     map("n", "<leader>rn", lsp.buf.rename)
     map("n", "<leader>f", lsp.buf.format)
     map("n", "<leader>ca", lsp.buf.code_action)
-    
-    map("n", "<leader>ws", function()
-  require("metals").hover_worksheet()
-end)
+    map("n", "<leader>ws", function() require("metals").hover_worksheet() end)
   end,
   group = nvim_metals_group,
 
