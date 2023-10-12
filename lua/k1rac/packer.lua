@@ -57,5 +57,6 @@ require('packer').startup(function(use)
     use('petobens/poet-v')
     use { 'onsails/lspkind.nvim' }
     use { 'vimwiki/vimwiki' }
+    use { 'nvim-tree/nvim-tree.lua' }
 
 end)

@@ -17,6 +17,8 @@ Shortcuts and Configurations Added in NVim:
     - J: Move selected lines down
     - K: Move selected lines up
 
+  <F2> Refactor: Rename variable under cursor
+
 - Configuration Changes:
   - Colorscheme: Dracula
   - Plugins:

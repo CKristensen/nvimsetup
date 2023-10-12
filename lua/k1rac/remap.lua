@@ -1,6 +1,6 @@
 V = vim
 V.g.mapleader = " "
-V.keymap.set("n", "<leader>fv", V.cmd.Ex)
+-- V.keymap.set("n", "<leader>fv", V.cmd.Ex)
 
 V.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 V.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
