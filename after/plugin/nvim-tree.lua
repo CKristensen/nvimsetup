@@ -24,3 +24,18 @@ require("nvim-tree").setup({
 })
 vim.keymap.set("n", "<leader>fv", "<cmd>NvimTreeOpen<CR>")
 
+vim.keymap.set("n", "<leader>tr", function()
+  vim.cmd.cd(vim.fn.fnamemodify(vim.api.nvim_buf_get_name(0), ":h"))
+  require("nvim-tree.api").tree.open({
+    find_file = true,
+  })
+end, { noremap = true })
+
+
+vim.keymap.set("n", "<leader>tc", function()
+  require("nvim-tree.api").tree.close()
+end, { noremap = true })
+
+vim.keymap.set("n", "<leader>to", function()
+  require("nvim-tree.api").tree.toggle()
+end, { noremap = true })
