@@ -53,9 +53,9 @@
   - Open diagnostic float: `<leader>vd`
   - Go to next diagnostic: `[d`
   - Go to previous diagnostic: `]d`
-  - Code action: `<leader>vca`
-  - Find references: `<leader>vrr`
-  - Rename: `<leader>vrn`
+  - Code action: `<leader>ca`
+  - Find references: `<leader>rr`
+  - Rename: `<leader>rn`
   - Signature help: `<C-h>` (in insert mode)
 
 - **Telescope**:
